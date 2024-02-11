@@ -19,4 +19,17 @@
   <body>
     <img src="sprinthost.png" alt="how work sprinthost">
   </body>
+  <script type="text/javascript">
+    let countClick=+0;
+    document.querySelector('img').addEventListener('click',()=>{
+      countClick++;
+      if(countClick==1){
+        console.log('cl')
+        document.querySelector('img').setAttribute('src','Untitled.png');
+      }else{
+        document.querySelector('img').setAttribute('src','sprinthost.png');
+        countClick=0;
+      }
+    });
+  </script>
 </html>
